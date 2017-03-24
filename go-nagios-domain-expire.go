@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/redacid/whois-parser-go"
+	"github.com/likexian/whois-parser-go"
+	"github.com/likexian/whois-go"
 	//"github.com/fatih/color"
 	"fmt"
 	"flag"
@@ -48,7 +49,10 @@ func main() {
 	fmt.Println(err)
 	}
 
-
+	result, err = whois.Whois("redacid.org.ua")
+	if err == nil {
+		fmt.Println(result)
+	}
 
 
 }
