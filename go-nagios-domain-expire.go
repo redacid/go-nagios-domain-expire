@@ -26,8 +26,8 @@ func main() {
 	//panounce := color.New(color.FgHiCyan,color.BgBlack)
 	//perror := color.New(color.FgHiRed,color.BgBlack)
 
-	//whois_raw := whois_parser.ReadFile("whois.txt")
-	whois_raw := "ios.in.ua"
+	whois_raw, err := whois_parser.ReadFile("./whois.txt")
+	//whois_raw := "ios.in.ua"
 	result, err := whois_parser.Parser(whois_raw)
 	if err == nil {
 		// Print the domain status
