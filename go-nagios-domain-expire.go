@@ -52,6 +52,8 @@ func main() {
 	result1, err1 := whois.Whois("redacid.org.ua")
 	if err1 == nil {
 		fmt.Println(result1)
+	} else {
+		fmt.Println(err1)
 	}
 
 
