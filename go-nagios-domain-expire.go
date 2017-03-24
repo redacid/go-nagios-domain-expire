@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/likexian/whois-parser-go"
+	"github.com/redacid/whois-parser-go"
 	//"github.com/fatih/color"
 	"fmt"
 	"flag"
